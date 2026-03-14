@@ -1,7 +1,8 @@
 export default function Home() {
   return (
+    
     <main className="min-h-screen bg-black text-white p-10">
-
+      <FlyingBird />
       <section className="mb-20">
         <h1 className="text-5xl font-bold">Sree Nishanth J</h1>
         <p className="mt-4 text-xl">
@@ -83,5 +84,29 @@ export default function Home() {
       </section>
 
     </main>
+  );
+}
+
+"use client";
+import { useState } from "react";
+
+function FlyingBird() {
+  const [fly, setFly] = useState(false);
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        right: "60px",
+        top: "200px",
+        cursor: "pointer",
+        fontSize: "40px",
+        transition: "transform 4s linear",
+        transform: fly ? "translate(-1200px, -200px)" : "none",
+      }}
+      onClick={() => setFly(true)}
+    >
+      🐦
+    </div>
   );
 }
