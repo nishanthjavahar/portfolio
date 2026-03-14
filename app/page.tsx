@@ -2,24 +2,68 @@
 
 import { useState } from "react";
 
-function FlyingBird() {
-  const [fly, setFly] = useState(false);
+function WildlifeAnimation() {
+  const [stage, setStage] = useState(0);
+
+  const startAnimation = () => {
+    setStage(1); // bird starts flying
+
+    setTimeout(() => setStage(2), 3000); // elephant joins
+    setTimeout(() => setStage(3), 7000); // leopard joins
+    setTimeout(() => setStage(4), 10000); // move to top center
+    setTimeout(() => setStage(5), 13000); // fade away
+  };
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        right: "60px",
-        top: "200px",
-        cursor: "pointer",
-        fontSize: "40px",
-        transition: "transform 4s linear",
-        transform: fly ? "translate(-1200px, -200px)" : "none",
-      }}
-      onClick={() => setFly(true)}
-    >
-      🕊️
-    </div>
+    <>
+      {/* Bird */}
+      <div
+        onClick={startAnimation}
+        style={{
+          position: "fixed",
+          right: stage === 0 ? "60px" : "70%",
+          top: stage < 4 ? "200px" : "60px",
+          fontSize: "40px",
+          cursor: "pointer",
+          transition: "all 4s linear",
+          opacity: stage === 5 ? 0 : 1,
+        }}
+      >
+        🕊️
+      </div>
+
+      {/* Elephant */}
+      {stage >= 2 && (
+        <div
+          style={{
+            position: "fixed",
+            left: stage < 4 ? "10%" : "45%",
+            bottom: stage < 4 ? "40px" : "70%",
+            fontSize: "50px",
+            transition: "all 6s linear",
+            opacity: stage === 5 ? 0 : 1,
+          }}
+        >
+          🐘
+        </div>
+      )}
+
+      {/* Leopard */}
+      {stage >= 3 && (
+        <div
+          style={{
+            position: "fixed",
+            right: stage < 4 ? "20%" : "50%",
+            bottom: stage < 4 ? "40px" : "70%",
+            fontSize: "45px",
+            transition: "all 4s linear",
+            opacity: stage === 5 ? 0 : 1,
+          }}
+        >
+          🐆
+        </div>
+      )}
+    </>
   );
 }
 
@@ -93,8 +137,8 @@ export default function Home() {
 
           <p className="text-gray-700 max-w-md">
             Wildlife enthusiast passionate about conservation and nature
-            education. I volunteer at Bannerghatta Biological Park where I help
-            conduct wildlife awareness programs.
+            education. I volunteer at Bannerughatta Biological Park where I help
+            conduct wildlife awareness programs and guide visitors at various sections of the park.
           </p>
         </div>
       </section>
