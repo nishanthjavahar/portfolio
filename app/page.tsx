@@ -6,12 +6,11 @@ function WildlifeAnimation() {
   const [stage, setStage] = useState(0);
 
   const startAnimation = () => {
-    setStage(1); // bird starts flying
-
-    setTimeout(() => setStage(2), 3000); // elephant joins
-    setTimeout(() => setStage(3), 7000); // leopard joins
-    setTimeout(() => setStage(4), 10000); // move to top center
-    setTimeout(() => setStage(5), 13000); // fade away
+    setStage(1);
+    setTimeout(() => setStage(2), 3000);
+    setTimeout(() => setStage(3), 7000);
+    setTimeout(() => setStage(4), 10000);
+    setTimeout(() => setStage(5), 13000);
   };
 
   return (
@@ -71,7 +70,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white p-10">
 
-      <FlyingBird />
+      <WildlifeAnimation />
 
       <section className="mb-20">
         <h1 className="text-5xl font-bold">Sree Nishanth J</h1>
@@ -137,8 +136,8 @@ export default function Home() {
 
           <p className="text-gray-700 max-w-md">
             Wildlife enthusiast passionate about conservation and nature
-            education. I volunteer at Bannerughatta Biological Park where I help
-            conduct wildlife awareness programs and guide visitors at various sections of the park.
+            education. I volunteer at Bannerghatta Biological Park where I help
+            conduct wildlife awareness programs and guide visitors.
           </p>
         </div>
       </section>
