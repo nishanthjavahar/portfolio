@@ -37,7 +37,15 @@ export default function Home() {
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-4">Projects</h2>
         <div className="bg-gray-900 p-6 rounded-xl">
-          <h3 className="text-xl font-bold">BBP Education Portal https://bbp-education.onrender.com  </h3>
+          <h3 className="text-xl font-bold">BBP Education Portal</h3>
+          <a 
+  href="https://bbp-education.onrender.com" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-blue-600 underline"
+>
+  BBP Education Portal
+</a>
           <p className="text-gray-400 mt-2">
             Prototype platform to manage educational activities and
             internship coordination for Bannerughatta Biological Park.
