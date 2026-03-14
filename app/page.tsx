@@ -12,7 +12,7 @@ export default function Home() {
           Backend Developer | Python | SQL | Web Development
         </p>
       </section>
-
+    
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-4">About</h2>
         <p className="text-gray-300 max-w-xl">
@@ -106,7 +106,7 @@ function FlyingBird() {
       }}
       onClick={() => setFly(true)}
     >
-      🐦
+      🕊️
     </div>
   );
 }
