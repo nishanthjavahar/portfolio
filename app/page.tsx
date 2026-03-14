@@ -37,14 +37,36 @@ export default function Home() {
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-4">Projects</h2>
         <div className="bg-gray-900 p-6 rounded-xl">
-          <h3 className="text-xl font-bold">BBP Education Portal</h3>
+          <h3 className="text-xl font-bold">BBP Education Portal https://bbp-education.onrender.com/ </h3>
           <p className="text-gray-400 mt-2">
             Prototype platform to manage educational activities and
-            internship coordination for Bannerghatta Biological Park.
+            internship coordination for Bannerughatta Biological Park.
           </p>
         </div>
       </section>
+      <section className="mt-12">
+  <h2 className="text-2xl font-semibold mb-4">Beyond Code</h2>
 
+  <div className="flex items-center gap-6 bg-gray-100 p-6 rounded-2xl">
+
+    {/* Elephant icon */}
+    <div className="w-16 h-16 bg-green-200 rounded-[30%] flex items-center justify-center">
+      🐘
+    </div>
+
+    {/* Leopard icon */}
+    <div className="w-16 h-16 bg-yellow-200 rounded-[35%] flex items-center justify-center">
+      🐆
+    </div>
+
+    <p className="text-gray-700 max-w-md">
+      Wildlife enthusiast passionate about conservation and nature education.
+      I volunteer at Bannerghatta Biological Park where I help conduct wildlife
+      awareness programs and guide visitors about biodiversity.
+    </p>
+
+  </div>
+</section>
       <section>
         <h2 className="text-3xl font-semibold mb-4">Contact</h2>
         <p>Email: nishanthjavahar.14@gmail.com</p>
