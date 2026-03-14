@@ -37,7 +37,7 @@ export default function Home() {
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-4">Projects</h2>
         <div className="bg-gray-900 p-6 rounded-xl">
-          <h3 className="text-xl font-bold">BBP Education Portal https://bbp-education.onrender.com/ </h3>
+          <h3 className="text-xl font-bold">BBP Education Portal https://bbp-education.onrender.com  </h3>
           <p className="text-gray-400 mt-2">
             Prototype platform to manage educational activities and
             internship coordination for Bannerughatta Biological Park.
@@ -61,7 +61,7 @@ export default function Home() {
 
     <p className="text-gray-700 max-w-md">
       Wildlife enthusiast passionate about conservation and nature education.
-      I volunteer at Bannerghatta Biological Park where I help conduct wildlife
+      I volunteer at Bannerughatta Biological Park where I help conduct wildlife
       awareness programs and guide visitors about biodiversity.
     </p>
 
